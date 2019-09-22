@@ -2,6 +2,10 @@
 ob_start(); //初始化
 include('system/inc.php');//载入全局配置
 error_reporting(0); //关闭错误报告
+if (!file_exists('./install/index.lock')) {
+    header("location:install");
+    die;
+}
 $seach=file_get_contents('https://www.360kan.com/');
 $szz="# <a href='(.*?)' class='p0 g-playicon js-playicon' ><img src='(.*?)' alt='(.*?)' /><span class='title'>(.*?)</span><span class='desc'>(.*?)</span><b></b>#";
 preg_match_all($szz,$seach,$sarr);

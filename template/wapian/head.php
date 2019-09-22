@@ -7,20 +7,20 @@
 <meta http-equiv="Expires" content="0" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-<script src="<?php echo $xtcms_domain;?>style/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="<?php echo $xtcms_domain;?>style/respond/1.4.2/respond.min.js"></script>
+<script src="./style/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="./style/respond/1.4.2/respond.min.js"></script>
 
 <link href="css/style.min.css" rel="stylesheet" type="text/css" />
 <script type='text/javascript' src="https://cdn.staticfile.org/Swiper/3.4.2/js/swiper.min.js"></script>
-<link href="<?php echo $xtcms_domain;?>style/css/bootstrap.min.css" rel="stylesheet" type="text/css" />				
-<link href="https://cdn.staticfile.org/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet" type="text/css" >		
-<link href="<?php echo $xtcms_domain;?>style/font/iconfont.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo $xtcms_domain;?>style/css/blackcolor.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo $xtcms_domain;?>style/css/style.min.css" rel="stylesheet" type="text/css" />
+<link href="./style/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.staticfile.org/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet" type="text/css" >
+<link href="./style/font/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="./style/css/blackcolor.css" rel="stylesheet" type="text/css" />
+<link href="./style/css/style.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.staticfile.org/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo $xtcms_domain;?>style/js/bootstrap.min.js"></script>		
-<script src="<?php echo $xtcms_domain;?>style/js/function.js"></script>
-<script type='text/javascript' src="<?php echo $xtcms_domain;?>style/js/LazyLoad.js"></script>
-<script type='text/javascript' src="<?php echo $xtcms_domain;?>style/js/swiper.min.js"></script>
-<script type="text/javascript " src="<?php echo $xtcms_domain;?>style/js/history.js "></script>	
+<script type="text/javascript" src="./style/js/bootstrap.min.js"></script>
+<script src="./style/js/function.js"></script>
+<script type='text/javascript' src="./style/js/LazyLoad.js"></script>
+<script type='text/javascript' src="./style/js/swiper.min.js"></script>
+<script type="text/javascript " src="./style/js/history.js "></script>
 

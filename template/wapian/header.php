@@ -15,7 +15,7 @@ if ($k>0){
 $tiaourl=$cc.$_GET['play'];
 		}
 else{
-$tiaourl=$dd.$_GET['play'];	
+$tiaourl=$dd.$_GET['play'];
 		}
 }
 }
@@ -53,11 +53,11 @@ if ($xtcms_hong==1){
 
 					<a class="hidden-sm hidden-xs" href="<?php echo $xtcms_domain;?>"><img src="<?php echo $xtcms_logo;?>" /></a>
 
-		  			<a class="visible-sm visible-xs" href="<?php echo $xtcms_domain;?>"><img src="<?php echo $xtcms_logo;?>" /></a>											  
+		  			<a class="visible-sm visible-xs" href="<?php echo $xtcms_domain;?>"><img src="<?php echo $xtcms_logo;?>" /></a>
 
-				</div>	
+				</div>
 
-				<div class="search"> 
+				<div class="search">
 
 <form id="ff-search" role="search" action="<?php echo $xtcms_domain;?>seacher.php" method="post">
 
@@ -65,7 +65,7 @@ if ($xtcms_hong==1){
 
                             <input type="submit" class="hide"><a href="javascript:" class="btns" title="搜索" onClick="$('#ff-search').submit();"><i class="icon iconfont icon-search"></i></a></form>
 
-			   </div>			   
+			   </div>
 
 
 			   <ul class="menulist hidden-xs">
@@ -101,9 +101,9 @@ if ($xtcms_hong==1){
 
 
 
-				</ul>													 
+				</ul>
 
-		  	</div>							
+		  	</div>
 
 	    </div>
 
