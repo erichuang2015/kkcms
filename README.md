@@ -7,7 +7,7 @@
  2.操作系统：本产品跨平台，支持Windows、Linux操作系统。
  3.Web服务器：支持各主流的Web服务器，如：Apache、Nginx（需要配置支持PATHINFO模式）。
 
-# 温馨提示：
+# 温馨提示
  1.强烈推荐使用Linux系统，使用nginx环境搭建程序，完美无错。
  2.对于内存小于512M的机器，建议使用Linux系统。
  3.使用Windows系统，如果出现后台报错提示请尝试更换PHP版本。
@@ -24,3 +24,23 @@
 
 # 使用说明
  1.	【必看】更多详细使用手册请见：https://www.showdoc.cc/kkss?page_id=435681754337319
+
+# 特别说明
+ 1.程序默认开启了首页静态缓存文件生成，这会使网络任何情况下访问此程序都会变得更快，但是你必须频繁的更新这个首页信息，否则将实时获取最新的首页内容。
+ 这个操作可以用自动化实现，你可以使用网址监控程序监控网站首页地址，比如说：http://127.0.0.1/index.php 
+ 或者你可以自行取消这个功能，编辑程序目录下的template/wapian/index.php文件，将第470-481行代码删除
+ 
+ <?php
+  $info = ob_get_contents(); 
+  $filectime = filectime("index.html"); 
+  if ( !(time() - 0  > $filectime) ) { 
+  ob_end_clean(); 
+  exit();
+  }
+  if ( $handle = @fopen('index.html', 'w') ) { 
+  @fwrite($handle, $info);
+  @fclose($handle);
+  }
+?>
+
+ 当然，如果你使用了其他模版，这个功能可能是不会自带的。
