@@ -22,11 +22,11 @@ $movie='class="active"'?>
 			<div class="hy-switch-tabs active clearfix">
 				<span class="text-muted pull-right hidden-xs">本页面全部来源至外站，如有侵权请联系底部邮箱！</span>
 				<ul class="nav nav-tabs">
-<?php 
+<?php
 $b=(strpos($_GET['m'],'rank='));
 $ye=substr($_GET['m'],$b+5);
 ?>
-					
+
 				</ul>
 			</div>
 			<div class="hy-video-list">
@@ -34,7 +34,7 @@ $ye=substr($_GET['m'],$b+5);
 					<ul class="clearfix">
 <?php if ($_GET['type'] == 'mj'){
 	if(empty($_GET['cx'])){$flid1='3~~~~~~~0~id~~1';}
-	
+
 		$mj='active';
 		$yixuanze='美剧';
 		$panduan='mj';
@@ -73,28 +73,29 @@ $response = str_replace("<ul>", "", $response);
 $response = str_replace('"><a', '"><a class="active"', $response);
 $response = str_replace('class="on"', "", $response);
 $response = str_replace("/index.php/whole/index/", "?type=$panduan&cx=", $response);
-	
+
 ?>
 <!--导航结束-->
-      
+
  <?php
 $szz1='#<li><a href="/index.php/show/index/(.*?)"><b>(.*?)</b><img src="(.*?)" /><span>(.*?)</span></a></li>#';
 preg_match_all($szz1, $info,$sarr1);
-       for($i =0;$i<12;$i++){   
+       for($i =0;$i<12;$i++){
            $zname=$sarr1[4][$i];//名字
-           $two=$sarr1[1][$i];//ID                                              
-           $gq=$sarr1[2][$i];//ID                                              
-           $zimg=$sarr1[3][$i];//图片
+           $two=$sarr1[1][$i];//ID
+           $gq=$sarr1[2][$i];//ID
+		   $zimg=$sarr1[3][$i];//图片
+
 
 			echo "<div class='col-md-2 col-sm-3 col-xs-4'>
-							<a class='videopic lazy' href='/mplay.php?mso=$two' title='$zname' data-original='$zimg' style='background: url(./style/load.gif) no-repeat; background-position:50% 50%; background-size: cover;border-radius: 6px;'>
+							<a class='videopic lazy' href='$xtcms_domain/mplay.php?mso=$two' title='$zname' data-original='$zimg' style='background: url(./style/load.gif) no-repeat; background-position:50% 50%; background-size: cover;border-radius: 6px;'>
 							<span class='play hidden-xs'></span></a>
 							<div class='title'>
-								<h5 class='text-overflow'><a href='/mplay.php?mso=$two'>$zname</a></h5>
+								<h5 class='text-overflow'><a href='$xtcms_domain/mplay.php?mso=$two'>$zname</a></h5>
 							</div>
 							<div class='subtitle text-muted text-muted text-overflow hidden-xs'></div>
 						</div>";
-						
+
  } ?>
 
 						</ul>
@@ -111,7 +112,7 @@ $response0 = str_replace("<li on", "<li><a on", $response0);
 $response0 = str_replace("</li>", "</a></li>", $response0);
 $response0 = str_replace("/index.php/whole/index/", "?cx=", $response0);
 echo $response0;
-?>  
+?>
 </div>
 </ul>
 			</div>		</div>
